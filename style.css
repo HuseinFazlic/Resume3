@@ -1,0 +1,167 @@
+/*
+	Student: Husein Fazlić
+	Course: Web Application Development(CS412)
+	Professor: Ali Almisreb
+	Date: November 16th, 2019
+*/
+	
+/* General things applied to elements */
+html, body {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+	
+	background-image: linear-gradient(to bottom right, white, grey);
+	color: black;
+
+	font-family: Cambria;
+	font-size: 24px;
+	
+}
+h2 {
+	text-indent: 20px;
+}
+p {
+	padding: 20px;
+}
+hr {
+	border-color: LightSkyBlue;
+	background-color: LightSkyBlue;
+}
+li {
+	list-style-type: square;
+}
+/*************************************/
+/* Navbar start */
+/* Navigation bar at the top of the page */
+div.topnav {
+	position: fixed;
+	top:0;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	height: 8%;
+	background-color: navy;
+}
+/* Individual elements in the navigation bar */
+div.topnav a {
+	float: left; 
+	display: block;
+	color: white;
+	width: 10%;
+	text-align: center;
+	padding: 13px;
+	
+	font-size:20px;
+	text-decoration: none;
+}
+/* Setting elements with icons to be smaller */
+div.topnav>a.social {
+	width: 8%;
+	padding: 11px;
+}	
+/* On hovering mouse over elements in the navigation bar, change colour */
+div.topnav a:hover {
+	background-color: lightskyblue;
+	color: white;
+}
+/* Navbar end */
+/*************************************/
+/* Main body start */
+/* Make single column layout at the end */
+.main:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Introductory message at the beginning */
+#intro {
+	position: relative;
+	top: 50px;
+	display: block;
+	font-size: 28px;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+}
+/* Greetings message at the beginning */
+#greeting {
+	position: relative;
+	display: block;
+	top: 50px;
+	left: 30px;
+	
+	font-size: 28px;
+}
+/* Columns layout */
+.body_div {
+	float: left;
+	width: 50%;
+	height: 500px;
+	text-align: justify;
+}
+
+/*Main body ends */
+/*************************************/
+/* Footer start */
+.footer {
+	display: block;
+	width: 100%;
+	height:150px;
+	background-color: beige;
+}
+/* Footer ends */
+/*************************************/
+/* Table start */
+/* Styling table, rows, cells */
+table, tr, td, th {
+	background-color: Beige;
+	border:3px groove;
+	border-color: navy;
+	border-collapse: collapse;
+	color: purple;
+	text-decoration: none;
+	font-size: 20px;
+}
+/* Text inside cell links*/
+td>a {
+	color: purple;
+	text-decoration: none;
+	font-size: 25px;
+}
+/* Change colour of link text when hovered */
+td>a:hover {
+	color: red;
+}
+/* Table end */
+/*************************************/
+/* Image starts */
+/* Initial photo how to appear */
+.photo {
+	border: 3px dashed lightBlue;
+	border-radius: 15px;
+	position: relative;
+	filter: grayscale(70%);
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+/* Hovered photo how to appear */
+.photo:hover {
+	filter: grayscale(0%);
+	width: 400px;
+	height: 400px;
+}
+/* Text below image how to appear */
+figcaption {
+	font-size : 18px;
+}
+/* Small icons how to appear */
+.image_icon {
+	height:4vh;
+	width: 4vh;
+}
+/* Image ends */
+/*************************************/

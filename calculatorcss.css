@@ -1,0 +1,7 @@
+.myCalculator {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+p {
+	display:block;
+}
